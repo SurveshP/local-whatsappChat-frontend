@@ -15,7 +15,7 @@ function App() {
 
   // Initialize socket
   useEffect(() => {
-    socketRef.current = io('http://localhost:5000', {
+    socketRef.current = io('https://local-whatsappchat-backend.onrender.com', {
       transports: ['websocket'], // only websocket
       reconnection: true,
       reconnectionAttempts: 5
